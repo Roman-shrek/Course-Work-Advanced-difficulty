@@ -1,23 +1,21 @@
 import java.util.Objects;
 
 public class Employee {
-    private final Employee[] employee;
     private String nameEmployee;
     private int sallary;
     private int numberDepartment;
-    private static int count=0;
-    int id;
+    private static int count;
+    private int id;
 
     public Employee(String nameEmployee, int sallary, int numberDepartment) {
         this.nameEmployee = nameEmployee;
         this.sallary = sallary;
         this.numberDepartment = numberDepartment;
-        this.employee = new Employee[10];
         this.id=++count;
     }
 
     public int getCount() {
-        return count;
+        return id;
     }
     public String getNameEmployee() {
         return this.nameEmployee;

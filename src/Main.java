@@ -8,7 +8,7 @@ public class Main {
                 int indexSallary = employee[i].getSallary() + (employee[i].getSallary() / 100);
                 System.out.println("Индексация сотрудников отдела - " + employee[i].getNameEmployee() +
                         " индексированная зарплата" + " " + indexSallary + " отдел: "
-                        + employee[i].getNumberDepartment() + ". Id -" + employee[i].id);
+                        + employee[i].getNumberDepartment() + ". Id -" + employee[i].getCount());
             }
         }
     }
@@ -91,7 +91,7 @@ public class Main {
     public static void findEmployeeLessNumber(int number) {
         for (int i = 0; i < employee.length; i++) {
             if (employee[i] != null && employee[i].getSallary() < number) {
-                System.out.println(employee[i] + " Id -" + employee[i].id);
+                System.out.println(employee[i] + " Id -" + employee[i].getCount());
             }
         }
     }
@@ -99,7 +99,7 @@ public class Main {
     public static void findEmployeeMoreNumber(int number) {
         for (int i = 0; i < employee.length; i++) {
             if (employee[i] != null && employee[i].getSallary() >= number) {
-                System.out.println(employee[i] + " Id -" + employee[i].id);
+                System.out.println(employee[i] + " Id -" + employee[i].getCount());
             }
         }
     }
